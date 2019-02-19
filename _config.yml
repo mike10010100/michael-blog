@@ -45,3 +45,4 @@ plugins:
 prose:
   - siteurl: "https://mikebinary.com"
   - media: "media"
+  - rooturl: '_posts'
