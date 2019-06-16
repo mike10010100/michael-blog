@@ -1,9 +1,9 @@
 ---
-published: false
+published: true
 ---
 It's just insane hearing the exact same BS from the far-right parties of major European countries as we hear from the alt-right in the US.
 
-This last week The Daily has been airing an exposé where they interview these people, and it's all about "oh we're just trying to keep X country X" (read: white), mixed with a bunch of stuff about returning to "traditional values" and "stronger border control".
+This last week The Daily has been airing an exposÃ© where they interview these people, and it's all about "oh we're just trying to keep X country X" (read: white), mixed with a bunch of stuff about returning to "traditional values" and "stronger border control".
 
 But the most concerning aspect was that they are far better able to articulate the issue at hand, the thing that's turning them to support the far-right: they *want* the tyranny of the majority. They explained that they were tired of living under a democracy that protected the rights and opinions of the "minority".
 
