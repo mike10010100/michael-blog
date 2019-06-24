@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 Reminder: civility rules that have no examples nor specific guidelines are a subjective way to ensure that trolls control the entire board.
 
