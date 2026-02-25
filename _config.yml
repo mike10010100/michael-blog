@@ -25,6 +25,7 @@ github_username:  mike10010100
 markdown: kramdown
 plugins:
   - jekyll-seo-tag
+  - jekyll-feed
   - jekyll-sitemap
   - jekyll-include-cache
 
