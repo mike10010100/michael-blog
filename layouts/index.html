@@ -1,9 +1,5 @@
 {{ define "main" }}
 <div class="home">
-    {{ if .Title }}
-    <h1 class="page-heading">{{ .Title }}</h1>
-    {{ end }}
-
     {{ .Content }}
 
     {{ $posts := where .Site.RegularPages "Section" "posts" }}
