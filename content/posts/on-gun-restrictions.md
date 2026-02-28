@@ -1,5 +1,7 @@
 ---
-published: true
+title: "On Gun Restrictions"
+date: 2019-06-02T12:00:00-05:00
+draft: false
 ---
 ## "Cars and knives can kill people too! Why aren't we banning guns?"
 

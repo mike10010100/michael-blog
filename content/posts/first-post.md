@@ -1,5 +1,6 @@
 ---
-published: true
+title: "First Post"
+draft: false
 layout: post
 date: '2019-02-18 21:28:13 -0500'
 categories: first

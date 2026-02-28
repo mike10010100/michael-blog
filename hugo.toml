@@ -1,0 +1,8 @@
+baseURL = 'https://mikebinary.com/'
+title = "Michael Paulauski's blog"
+languageCode = 'en-us'
+
+[params]
+  description = "My personal blog. Full of tech, politics, and other nonsense. All opinions expressed here are my own and not my employers'."
+  twitter_username = "mike10010100"
+  github_username = "mike10010100"
