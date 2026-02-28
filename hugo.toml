@@ -5,6 +5,10 @@ languageCode = 'en-us'
 [taxonomies]
   tag = "tags"
 
+[outputFormats.RSS]
+  mediatype = "application/rss+xml"
+  baseName = "feed"
+
 [params]
   description = "My personal blog. Full of tech, politics, and other nonsense. All opinions expressed here are my own and not my employers'."
   bluesky_username = "mike10010100.com"
