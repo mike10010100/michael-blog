@@ -1,9 +1,9 @@
 {{ define "main" }}
-<div class="home">
-  <h1 class="page-heading">{{ .Title }}</h1>
-  {{ .Content }}
-
-  {{ if gt (len .Pages) 0 }}
+<div class="taxonomy-page">
+  <h1 class="taxonomy-heading">
+    Posts tagged <span class="taxonomy-term">{{ .Title }}</span>
+  </h1>
+  <p class="taxonomy-back"><a href="/tags/">← All tags</a></p>
   <ul class="post-list">
     {{ range .Pages }}
     <li>
@@ -26,6 +26,5 @@
     </li>
     {{ end }}
   </ul>
-  {{ end }}
 </div>
 {{ end }}

@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Former child actor turned Dev turned DevOps Engineer. I like hacking, 3D printing, IoT, and politics. Not gonna lie, at this point it's probably mostly politics.
+Former child actor turned Dev turned DevOps Engineer. I spend my time on hacking, 3D printing, IoT, and politics — not necessarily in that order.
 
-Thoughts on my blog are my own and not my employers'.
+I work in infrastructure and platform engineering. This blog is where I think out loud about technology, current events, and whatever else is on my mind.
+
+All thoughts here are my own and not my employers'.

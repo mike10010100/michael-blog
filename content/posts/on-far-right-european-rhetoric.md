@@ -2,6 +2,7 @@
 title: "On Far Right European Rhetoric"
 date: 2019-06-16T12:00:00-05:00
 draft: false
+tags: ["politics", "europe"]
 ---
 It's just insane hearing the exact same BS from the far-right parties of major European countries as we hear from the alt-right in the US.
 
