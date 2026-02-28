@@ -345,9 +345,8 @@ p {
 
 /* Footer */
 .site-footer {
-  padding: 4rem 0;
+  padding: 3rem 0;
   margin-top: auto;
-  text-align: center;
 }
 
 .site-footer .wrapper {
@@ -355,31 +354,17 @@ p {
   padding-top: 2rem;
 }
 
-.footer-col-wrapper {
+.footer-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
 
-.contact-list {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-}
-
-.contact-list li {
-  margin-bottom: 0;
+.footer-copy {
+  font-size: 0.82rem;
   color: var(--text-muted);
-  font-size: 0.9rem;
-}
-
-.footer-col-3 p {
-  color: var(--text-muted);
-  font-size: 0.85rem;
-  max-width: 500px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 /* Responsive */

@@ -1,42 +1,22 @@
-<footer class="site-footer h-card">
-    <data class="u-url" href="{{ " /" | relURL }}"></data>
-    <div class="wrapper">
-        <div class="footer-col-wrapper">
-            <div class="footer-col footer-col-1">
-                <ul class="contact-list">
-                    <li class="p-name">
-                        {{ if .Site.Params.author }}
-                        {{ .Site.Params.author }}
-                        {{ else }}
-                        {{ .Site.Title }}
-                        {{ end }}
-                    </li>
-                    {{ if .Site.Params.email }}
-                    <li><a class="u-email" href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></li>
-                    {{ end }}
-                </ul>
-            </div>
-
-            <div class="footer-col footer-col-2">
-            </div>
-
-            <div class="footer-col footer-col-3">
-                <p>{{ .Site.Params.description }}</p>
-            </div>
-        </div>
+<footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-inner">
+      {{ partial "social-links.html" . }}
+      <p class="footer-copy">&copy; {{ now.Year }} Michael Paulauski</p>
     </div>
+  </div>
 </footer>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        var toggle = document.getElementById("theme-toggle");
-        if (toggle) {
-            toggle.addEventListener("click", function() {
-                var currentTheme = document.documentElement.getAttribute("data-theme");
-                var newTheme = currentTheme === "dark" ? "light" : "dark";
-                document.documentElement.setAttribute("data-theme", newTheme);
-                localStorage.setItem("theme", newTheme);
-            });
-        }
-    });
+  document.addEventListener("DOMContentLoaded", function() {
+    var toggle = document.getElementById("theme-toggle");
+    if (toggle) {
+      toggle.addEventListener("click", function() {
+        var currentTheme = document.documentElement.getAttribute("data-theme");
+        var newTheme = currentTheme === "dark" ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", newTheme);
+        localStorage.setItem("theme", newTheme);
+      });
+    }
+  });
 </script>
