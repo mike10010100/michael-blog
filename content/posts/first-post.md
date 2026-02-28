@@ -4,6 +4,7 @@ draft: false
 layout: post
 date: '2019-02-18 21:28:13 -0500'
 categories: first
+tags: ["meta"]
 ---
 So after much cajoling and harumphing, I've finally set up my blog.
 
