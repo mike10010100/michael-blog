@@ -1,0 +1,30 @@
+{{ define "main" }}
+<div class="taxonomy-page">
+  <h1 class="taxonomy-heading">
+    Posts tagged <span class="taxonomy-term">{{ .Title }}</span>
+  </h1>
+  <p class="taxonomy-back"><a href="/tags/">← All tags</a></p>
+  <ul class="post-list">
+    {{ range .Pages }}
+    <li>
+      <div class="post-card">
+        <span class="post-meta">{{ .Date.Format "Jan 2, 2006" }} &middot; {{ .ReadingTime }} min read</span>
+        <h3>
+          <a class="post-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h3>
+        {{ with .Params.tags }}
+        <div class="post-tags">
+          {{ range . }}
+          <a class="tag-pill" href="/tags/{{ . | urlize }}/">{{ . }}</a>
+          {{ end }}
+        </div>
+        {{ end }}
+        {{ if .Site.Params.show_excerpts }}
+        <div class="post-excerpt">{{ .Summary }}</div>
+        {{ end }}
+      </div>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}

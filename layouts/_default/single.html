@@ -28,6 +28,7 @@
     {{ .Content }}
   </div>
 
+  {{ if or .PrevInSection .NextInSection }}
   <nav class="post-nav" aria-label="Post navigation">
     <div class="post-nav-prev">
       {{ with .PrevInSection }}
@@ -42,5 +43,6 @@
       {{ end }}
     </div>
   </nav>
+  {{ end }}
 </article>
 {{ end }}

@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="taxonomy-page">
+  <h1 class="taxonomy-heading">All Tags</h1>
+  <ul class="tags-index">
+    {{ range .Data.Terms.Alphabetical }}
+    <li class="tags-index-item">
+      <a class="tag-pill tag-pill-lg" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+      <span class="tag-count">{{ .Count }} {{ if eq .Count 1 }}post{{ else }}posts{{ end }}</span>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}

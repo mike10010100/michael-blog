@@ -505,3 +505,51 @@ p {
   color: var(--accent-rust);
   border-bottom: none;
 }
+
+/* Taxonomy Pages */
+.taxonomy-heading {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.taxonomy-term {
+  color: var(--accent-rust);
+}
+
+.taxonomy-back {
+  margin-bottom: 3rem;
+  font-size: 0.9rem;
+}
+
+.taxonomy-back a {
+  color: var(--text-muted);
+  border-bottom: none;
+}
+
+.taxonomy-back a:hover {
+  color: var(--heading-color);
+  border-bottom: none;
+}
+
+.tags-index {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+}
+
+.tags-index-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tag-pill-lg {
+  font-size: 0.85rem;
+  padding: 0.25em 0.75em;
+}
+
+.tag-count {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
