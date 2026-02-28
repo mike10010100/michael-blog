@@ -7,7 +7,7 @@ languageCode = 'en-us'
 
 [params]
   description = "My personal blog. Full of tech, politics, and other nonsense. All opinions expressed here are my own and not my employers'."
-  twitter_username = "mike10010100"
+  bluesky_username = "mike10010100.com"
   github_username = "mike10010100"
   bio = "Former child actor turned Dev turned DevOps Engineer. Hacking, 3D printing, IoT, and politics."
   show_excerpts = true
