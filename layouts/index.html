@@ -1,27 +1,35 @@
 {{ define "main" }}
 <div class="home">
-    {{ .Content }}
+  <div class="home-intro">
+    <p class="home-bio">{{ .Site.Params.bio }}</p>
+    {{ partial "social-links.html" . }}
+  </div>
 
-    {{ $posts := where .Site.RegularPages "Section" "posts" }}
-    {{ if gt (len $posts) 0 }}
-    <h2 class="post-list-heading">{{ default "Recent Posts" .Params.list_title }}</h2>
-    <ul class="post-list">
-        {{ range $posts }}
-        <li>
-            <div class="post-card">
-                <span class="post-meta">{{ .Date.Format "Jan 2, 2006" }}</span>
-                <h3>
-                    <a class="post-link" href="{{ .RelPermalink }}">
-                        {{ .Title }}
-                    </a>
-                </h3>
-                {{ if .Site.Params.show_excerpts }}
-                <div class="post-excerpt">{{ .Summary }}</div>
-                {{ end }}
-            </div>
-        </li>
+  {{ $posts := where .Site.RegularPages "Section" "posts" }}
+  {{ if gt (len $posts) 0 }}
+  <h2 class="post-list-heading">Posts</h2>
+  <ul class="post-list">
+    {{ range $posts }}
+    <li>
+      <div class="post-card">
+        <span class="post-meta">{{ .Date.Format "Jan 2, 2006" }} &middot; {{ .ReadingTime }} min read</span>
+        <h3>
+          <a class="post-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h3>
+        {{ with .Params.tags }}
+        <div class="post-tags">
+          {{ range . }}
+          <a class="tag-pill" href="/tags/{{ . | urlize }}/">{{ . }}</a>
+          {{ end }}
+        </div>
         {{ end }}
-    </ul>
+        {{ if .Site.Params.show_excerpts }}
+        <div class="post-excerpt">{{ .Summary }}</div>
+        {{ end }}
+      </div>
+    </li>
     {{ end }}
+  </ul>
+  {{ end }}
 </div>
 {{ end }}

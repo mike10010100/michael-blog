@@ -414,3 +414,46 @@ p {
   height: 1.2rem;
   fill: currentColor;
 }
+
+/* Home Intro */
+.home-intro {
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.home-bio {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+}
+
+/* Tag Pills */
+.post-tags {
+  margin-bottom: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tag-pill {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 500;
+  text-transform: lowercase;
+  letter-spacing: 0.04em;
+  color: var(--accent-rust);
+  border: 1px solid var(--accent-rust);
+  border-radius: 2px;
+  padding: 0.15em 0.55em;
+  transition: all 0.15s ease;
+  border-bottom: none;
+}
+
+.tag-pill:hover {
+  background-color: var(--accent-rust);
+  color: #fff;
+  border-bottom: none;
+}
